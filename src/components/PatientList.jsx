@@ -1,17 +1,17 @@
 
 const patients = [
-  { name: "Emily Williams", gender: "Female", age: 18, image: "Layer 1@2x.png" },
-  { name: "Ryan Johnson", gender: "Male", age: 45, image: "Layer 3@2x.png" },
-  { name: "Brandon Mitchell", gender: "Male", age: 36, image: "Layer 4@2x.png" },
+  { name: "Emily Williams", gender: "Female", age: 18, image: "Layer 8@2x.png" },
+  { name: "Ryan Johnson", gender: "Male", age: 45, image: "Layer 1@2x.png" },
+  { name: "Brandon Mitchell", gender: "Male", age: 36, image: "Layer 3@2x.png" },
   { name: "Jessica Taylor", gender: "Female", age: 28, image: "JessicaTaylor.png", active: true },
-  { name: "Samantha Johnson", gender: "Female", age: 56, image: "Layer 5@2x.png" },
-  { name: "Ashley Martinez", gender: "Female", age: 54, image: "Layer 6@2x.png" },
-  { name: "Olivia Brown", gender: "Female", age: 32, image: "Layer 7@2x.png" },
-  { name: "Tyler Davis", gender: "Male", age: 19, image: "Layer 8@2x.png" },
-  { name: "Kevin Anderson", gender: "Male", age: 30, image: "Layer 9@2x.png" },
-  { name: "Dylan Thompson", gender: "Male", age: 36, image: "Layer 10@2x.png" },
+  { name: "Samantha Johnson", gender: "Female", age: 56, image: "Layer 6@2x.png" },
+  { name: "Ashley Martinez", gender: "Female", age: 54, image: "Layer 12@2x.png" },
+  { name: "Olivia Brown", gender: "Female", age: 32, image: "Layer 10@2x.png" },
+  { name: "Tyler Davis", gender: "Male", age: 19, image: "Layer 9@2x.png" },
+  { name: "Kevin Anderson", gender: "Male", age: 30, image: "Layer 4@2x.png" },
+  { name: "Dylan Thompson", gender: "Male", age: 36, image: "Layer 7@2x.png" },
   { name: "Nathan Evans", gender: "Male", age: 58, image: "Layer 12@2x.png" },
-  { name: "Mike Nolan", gender: "Male", age: 31, image: "pexels-photo-12222721@2x.png" }
+  { name: "Mike Nolan", gender: "Male", age: 31, image: "pexels-photo-1222271@2x.png" }
 ];
 
 function PatientList() {
