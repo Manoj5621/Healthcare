@@ -1,16 +1,38 @@
-# React + Vite
+# Healthcare Dashboard – Tech.Care
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React dashboard for viewing patient information, diagnosis history, health metrics, diagnostic records, and lab results.
 
-Currently, two official plugins are available:
+![Healthcare dashboard preview](public/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run locally
 
-## React Compiler
+You’ll need [Node.js](https://nodejs.org/) and npm installed.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repository and enter the project folder:
 
-## Expanding the Oxlint configuration
+   ```sh
+   git clone https://github.com/Manoj5621/Healthcare.git
+   cd Healthcare
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+3. Create a `.env` file in the project root with the API settings:
+
+   ```env
+   VITE_API_URL=https://fedskillstest.coalitiontechnologies.workers.dev
+   VITE_API_USERNAME=coalition
+   VITE_API_PASSWORD=skills-test
+   ```
+
+4. Start the development server:
+
+   ```sh
+   npm run dev
+   ```
+
+   Open the local URL shown in the terminal.
