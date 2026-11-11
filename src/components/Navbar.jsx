@@ -7,13 +7,49 @@ function Navbar() {
         <img src="/assets/icons/TestLogo.svg" alt="Tech.Care" />
       </div>
 
+      
       <nav className="nav-links">
-        <a href="#">Overview</a>
-        <a href="#" className="active">Patients</a>
-        <a href="#">Schedule</a>
-        <a href="#">Message</a>
-        <a href="#">Transactions</a>
+        <a href="#">
+          <img
+            src="/assets/icons/home_FILL0_wght300_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <span>Overview</span>
+        </a>
+
+        <a href="#" className="active">
+          <img
+            src="/assets/icons/group_FILL0_wght300_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <span>Patients</span>
+        </a>
+
+        <a href="#">
+          <img
+            src="/assets/icons/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <span>Schedule</span>
+        </a>
+
+        <a href="#">
+          <img
+            src="/assets/icons/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <span>Message</span>
+        </a>
+
+        <a href="#">
+          <img
+            src="/assets/icons/credit_card_FILL0_wght300_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <span>Transactions</span>
+        </a>
       </nav>
+
 
       <div className="doctor-profile">
         <img

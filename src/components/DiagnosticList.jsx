@@ -1,28 +1,32 @@
 
-function DiagnosticList() {
+function DiagnosticList({ patient }) {
+  if (!patient) return null;
+
   return (
     <section className="diagnostic-list">
-
       <h2>Diagnostic List</h2>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Problem/Diagnosis</th>
-            <th>Description</th>
-            <th>Status</th>
-          </tr>
-        </thead>
+      <div className="diagnostic-table-container">
+        <table className="diagnostic-table">
+          <thead>
+            <tr>
+              <th>Problem/Diagnosis</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <tr>
-            <td>--</td>
-            <td>--</td>
-            <td>--</td>
-          </tr>
-        </tbody>
-      </table>
-
+          <tbody>
+            {patient.diagnostic_list?.map((item, index) => (
+              <tr key={index}>
+                <td>{item.name}</td>
+                <td>{item.description}</td>
+                <td>{item.status}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }

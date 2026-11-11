@@ -49,17 +49,17 @@ function App() {
         <div className="dashboard-center">
 
           <div className="history-panel">
-            <DiagnosisHistory />
-            <HealthMetrics />
+            <DiagnosisHistory patient={patient}/>
+            <HealthMetrics patient={patient} />
           </div>
 
-          <DiagnosticList />
+          <DiagnosticList patient={patient}/>
 
         </div>
 
         <div className="dashboard-right">
-          <PatientProfile />
-          <LabResults />
+          <PatientProfile patient={patient} />
+          <LabResults patient={patient} />
         </div>
 
       </main>

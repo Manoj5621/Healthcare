@@ -307,60 +307,58 @@
 
 /* Patient Profile */
 
-.patient-profile {
-  text-align: center;
-  padding: 28px 20px;
-}
-
-.profile-image {
-  width: 170px;
-  height: 170px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.patient-profile > h2 {
-  font-size: 22px;
-  font-weight: 800;
-  margin-bottom: 28px;
-}
-
 .profile-details {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
+  width: 100%;
   text-align: left;
 }
 
-.profile-detail h4 {
+.profile-detail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-height: 42px;
+}
+
+.profile-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f6f7f8;
+}
+
+.profile-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  min-width: 0;
+}
+
+.profile-text h4 {
   font-size: 12px;
   font-weight: 500;
+  line-height: 18px;
 }
 
-.profile-detail p {
-  font-size: 12px;
+.profile-text p {
+  font-size: 13px;
   font-weight: 800;
-  margin-top: 3px;
-}
-
-.profile-button {
-  width: 100%;
-  max-width: 190px;
-  height: 38px;
-  margin-top: 28px;
-  border: none;
-  border-radius: 25px;
-  background: #01f0d0;
-  color: #072635;
-  font-size: 12px;
-  font-weight: 800;
+  line-height: 19px;
+  overflow-wrap: anywhere;
 }
 
 /* Diagnostic List */
@@ -505,4 +503,133 @@
 
 .history-panel .health-metrics {
   margin-top: 18px;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  min-width: 0;
+}
+
+.metric-icon {
+  width: 86px;
+  height: 86px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.metric-icon img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.profile-button {
+  width: 220px;
+  height: 41px;
+  margin-top: 8px;
+  background: #01F0D0;
+  border: none;
+  border-radius: 41px;
+  opacity: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #072635;
+
+  cursor: pointer;
+}
+
+.diagnostic-list {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.diagnostic-list h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #072635;
+  margin: 0 0 34px;
+}
+
+.diagnostic-table-container {
+  max-height: 210px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.diagnostic-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: "Manrope", sans-serif;
+}
+
+.diagnostic-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #F6F7F8;
+}
+
+.diagnostic-table th {
+  padding: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #072635;
+}
+
+.diagnostic-table th:first-child {
+  border-radius: 30px 0 0 30px;
+}
+
+.diagnostic-table th:last-child {
+  border-radius: 0 30px 30px 0;
+}
+
+.diagnostic-table td {
+  padding: 16px 14px;
+  font-size: 13px;
+  color: #072635;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.diagnostic-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #072635;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-links a img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.nav-links a.active {
+  background: #01F0D0;
+  border-radius: 41px;
+  padding: 12px 18px;
 }
